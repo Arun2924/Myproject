@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>Hello, World!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+      }
+      
+      #main{
+        position:absolute;
+        background-color: #e3e6e8 ;
+        height:100vh;
+        width:100vw;
+      }
+      #sub{
+      border-radius: 10px;
+      background-color: white;
+      height: 60vh;
+      width: 80vw;
+      position: relative;
+      left:10%;
+      top: 10%;
+      }
+      
+      #download{
+        position:relative;
+        background-color: white;
+        width:40vw;
+        height: 15vh;
+        top: 10%;
+        left: 25%;
+      }
+      
+      #text{
+        position: relative;
+        font-family: inter;
+        left:15%;
+        top: 15px;
+        font-size: 10vw;
+      }
+
+       
+     
+      #user{
+        position: relative;
+        left: 9%;
+        top:10%;
+        width: 65vw;
+        height: 5vh;
+        border-radius: 6px;
+        font-family: inter;
+        border: 1px solid #d1d5db;
+        font-size: 5vw;
+       
+      }
+      #mybutton{
+       position:relative;
+       background-color: #1A73E8;
+       left: 9% ;
+       top: 15%;
+       width:65vw;
+       height:5vh;
+       border-radius: 6px;
+       font-size: 5vw;
+       text-align: center;
+       font-family: inter;
+       border: 0px;
+       color: white;
+       
+      }
+      #mybutton:active {
+        scale: 99%;
+      }
+      
+      #pr{
+        position: relative;
+        top:20%;
+        font-family: inter;
+        text-decoration: underline;
+        color:#1A73E8;
+        font-size: 4vw;
+        text-align: center;
+      }
+      #log{
+        position:relative;
+        top:25%;
+        text-align: right;
+        padding-right: 10%;
+        font-family: inter;
+        font-size: 5vw;
+      }
+      
+      #back {
+        position:relative;
+        font-family: inter;
+        top: 20%;
+        left: 10%;
+        color:black;
+        font-size:5vw ;
+        
+      }
+      
+      #logo{
+        position:relative;
+        width:15vw;
+        top: 5vw;
+        left: 30%;
+      }
+      #click{
+        position: relative;
+        top:20%;
+        font-size: 5vw;
+        text-align: center;
+        
+        
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div id="main">
+     <div id= "sub">
+       <h1 id= "text">File Transfer </h1>
+       <div id="download" onclick="document.getElementById('in').click()">
+         <img id="logo"src="https://assets.onecompiler.app/43k5jxhsb/43k5kf39b/1000236112.png">
+         <p id="click">click here</p>
+         <input id="in" type="file" style="display:none";>
+       </div>
+       <input id="user" type="text" placeholder="Email address" onfocus="this.value =''">
+       <button id=mybutton onclick="document.getElementById('user').value = ''">Send</button>
+       <p id="pr">Get link</p>
+       <p id="log">login</p>
+       <p id="back">go back</p>
+     </div>
+    </div>
+  </body>
+</html>
